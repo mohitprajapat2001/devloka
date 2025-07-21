@@ -1,3 +1,5 @@
 from django.contrib import admin
+from codespace.models import CodeSpace, Syntax
 
-# Register your models here.
+admin.site.register(Syntax)
+admin.site.register(CodeSpace)
