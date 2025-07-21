@@ -6,6 +6,7 @@ THIRD_PARTY_APPS = [
 
 PROJECT_APPS = [
     "user.apps.UserConfig",
+    "codespace.apps.CodespaceConfig",
 ]
 DJANGO_APPS = [
     "django.contrib.admin",
