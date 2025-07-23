@@ -1,5 +1,5 @@
 from settings.base import *  # noqa
-from settings.conf import INSTALLED_APPS, MIDDLEWARE, env
+from settings.base import INSTALLED_APPS, MIDDLEWARE, env
 
 INSTALLED_APPS += ["storages", "whitenoise.runserver_nostatic"]
 MIDDLEWARE += ["whitenoise.middleware.WhiteNoiseMiddleware"]

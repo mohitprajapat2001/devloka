@@ -1,8 +1,48 @@
 {
-    "syntaxes":[
-        {
-            "title":"Plain Text",
-            "description":"Plain Text"
-        }
-    ]
+  "syntaxes": [
+    {
+      "title": "Plain Text",
+      "description": "Plain Text"
+    },
+    {
+      "title": "Markdown",
+      "description": "Markdown"
+    },
+    {
+      "title": "HTML",
+      "description": "HTML"
+    },
+    {
+      "title": "JSON",
+      "description": "JSON"
+    },
+    {
+      "title": "YAML",
+      "description": "YAML"
+    },
+    {
+      "title": "XML",
+      "description": "XML"
+    },
+    {
+      "title": "SQL",
+      "description": "SQL"
+    },
+    {
+      "title": "CSS",
+      "description": "CSS"
+    },
+    {
+      "title": "Python",
+      "description": "Python"
+    },
+    {
+      "title": "C++",
+      "description": "C++"
+    },
+    {
+      "title": "JavaScript",
+      "description": "JavaScript"
+    }
+  ]
 }
