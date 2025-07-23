@@ -12,7 +12,8 @@ class TestUsersListView(BaseTestCase):
     def setUp(self):
         super().setUp()
         self.url = reverse(UrlsNames.USERS_LIST)
-        self.users = UserFactory.create()
+        user = UserFactory.create()
+        self.client.force_authenticate(user=user)
 
     def test_users_list_get(self):
         """
