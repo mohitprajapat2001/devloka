@@ -1,5 +1,9 @@
 from django.contrib.auth.password_validation import validate_password
 from rest_framework import serializers
+from rest_framework_simplejwt.serializers import (
+    TokenObtainPairSerializer,
+    TokenRefreshSerializer,
+)
 from user.constants import ValidationErrors
 from user.models import User
 from utils.serializers import DynamicFieldsModelSerializer
@@ -94,3 +98,19 @@ class UserSerailizer(DynamicFieldsModelSerializer):
         user.set_password(password)
         user.save()
         return user
+
+
+class JWTTokenSerializer(TokenObtainPairSerializer):
+    """Serializer for user login using JWT."""
+
+    default_error_messages = {
+        "no_active_account": ValidationErrors.INVALID_CREDENTIALS,
+    }
+
+
+class JWTTokenRefreshSerializer(TokenRefreshSerializer):
+    """Serializer for refreshing JWT tokens."""
+
+    default_error_messages = {
+        "token_not_valid": ValidationErrors.INVALID_CREDENTIALS,
+    }

@@ -2,5 +2,7 @@
 
 
 class UrlsNames:
-    USERS_LIST = "users-list"
-    USERS_DETAIL = "users-detail"
+    USERS_LIST = "user:users-list"
+    USERS_DETAIL = "user:users-detail"
+    LOGIN = "user:login"
+    REFRESH_TOKEN = "user:token_refresh"
