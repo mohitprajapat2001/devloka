@@ -46,5 +46,6 @@ class CodeSpaceSerializer(DynamicFieldsModelSerializer):
             "user_id",
             "content",
             "is_private",
+            "version",
         )
         read_only_fields = ("id",)

@@ -46,5 +46,5 @@ class CodeSpaceViewSet(
             return CodeSpace.objects.create(
                 **self.kwargs,
                 title="Untitled",
-                syntax=Syntax.objects.get(title="Plain Text").id
+                syntax=Syntax.objects.get(title="Plain Text")
             )
