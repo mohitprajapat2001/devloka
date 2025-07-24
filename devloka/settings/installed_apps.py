@@ -1,11 +1,15 @@
 THIRD_PARTY_APPS = [
     "django_extensions",
+    "rest_framework",
+    "django_filters",
     "django_rq",
+    "daphne",
 ]
 
 
 PROJECT_APPS = [
     "user.apps.UserConfig",
+    "codespace.apps.CodespaceConfig",
 ]
 DJANGO_APPS = [
     "django.contrib.admin",
