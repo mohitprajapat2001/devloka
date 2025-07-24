@@ -4,19 +4,16 @@ from settings.base import INSTALLED_APPS, MIDDLEWARE, env
 INSTALLED_APPS += ["storages", "whitenoise.runserver_nostatic"]
 MIDDLEWARE += ["whitenoise.middleware.WhiteNoiseMiddleware"]
 DEBUG = True
-ALLOWED_HOSTS = [
-    "52.66.181.105",
-    "halydeals.com",
-    "www.halydeals.com",
-]
+ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://192.168.0.31:3000",
-    "https://meri-rail-web.vercel.app",
-    "https://meri-rail-web-git-develop-mohit-trootechs-projects.vercel.app",
+    "*",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
+# Allow All Origins
 CORS_ALLOW_CREDENTIALS = True
+
 
 # AWS S3 Configurations
 STORAGES = {

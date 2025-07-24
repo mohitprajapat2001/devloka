@@ -41,6 +41,7 @@ class CodeSpaceSerializer(DynamicFieldsModelSerializer):
             "description",
             "status",
             "syntax",
+            "syntax_id",
             "user",
             "user_id",
             "content",
