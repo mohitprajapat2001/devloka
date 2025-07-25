@@ -8,6 +8,7 @@ env = dotenv_values(".env")
 
 # BASE Directory Path
 BASE_DIR = Path(__file__).resolve().parent.parent
+APPEND_SLASH = True
 
 # Auth User Model
 AUTH_USER_MODEL = Settings.AUTH_USER_MODEL

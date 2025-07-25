@@ -4,6 +4,7 @@ THIRD_PARTY_APPS = [
     "django_filters",
     "django_rq",
     "daphne",
+    "corsheaders",
 ]
 
 
