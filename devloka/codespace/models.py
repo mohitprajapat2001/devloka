@@ -42,6 +42,7 @@ class CodeSpace(TitleDescriptionModel, TimeStampedModel, ActivatorModel):
     )
     content = models.TextField(null=True, blank=True)
     is_private = models.BooleanField(default=False)
+    version = models.PositiveBigIntegerField(default=0)
 
     def save(self, **kwargs):
         """
