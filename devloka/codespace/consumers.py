@@ -1,7 +1,8 @@
 import json
-from channels.generic.websocket import AsyncWebsocketConsumer
+
 from channels.db import database_sync_to_async
-from .models import CodeSpace
+from channels.generic.websocket import AsyncWebsocketConsumer
+from codespace.models import CodeSpace
 
 
 class CodeSpaceConsumer(AsyncWebsocketConsumer):
