@@ -31,7 +31,6 @@ class UserViewSet(ModelViewSet):
         """
         Override get_object to return the current user object.
         """
-
         return self.queryset.get(id=self.request.user.id)
 
 

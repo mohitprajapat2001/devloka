@@ -18,6 +18,7 @@ class UserSerailizer(DynamicFieldsModelSerializer):
         fields = (
             "id",
             "email",
+            "avatar",
             "first_name",
             "last_name",
             "is_active",
@@ -27,6 +28,9 @@ class UserSerailizer(DynamicFieldsModelSerializer):
         )
         read_only_fields = ("id", "is_active")
         extra_kwargs = {
+            "id": {"read_only": True},
+            "is_active": {"read_only": True},
+            "avatar": {"required": False},
             "password": {
                 "write_only": True,
                 "required": True,
