@@ -8,7 +8,7 @@ from django_extensions.db.models import (
 )
 
 
-def _code_space_id(self):
+def _code_space_id():
     """
     Generates ID for codespace
     """
@@ -19,13 +19,16 @@ def _code_space_id(self):
 
 
 class Syntax(TitleDescriptionModel, ActivatorModel):
+    extension = models.CharField(max_length=10, unique=True)
+    content_type = models.CharField(max_length=100)
+
     def __str__(self):
         """String Representation for Syntax"""
 
         return self.title
 
     class Meta:
-        unique_together = ("title", "status")
+        unique_together = ("title", "status", "extension")
 
 
 class CodeSpace(TitleDescriptionModel, TimeStampedModel, ActivatorModel):
@@ -51,3 +54,11 @@ class CodeSpace(TitleDescriptionModel, TimeStampedModel, ActivatorModel):
         if not self.id:
             self.id = _code_space_id()
         return super().save(**kwargs)
+
+    @property
+    def filename(self):
+        """
+        Returns the filename for this codespace as a string in the format:
+        '<id>.<syntax_extension>'.
+        """
+        return f"{self.title}.{self.syntax.extension}"

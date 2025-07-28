@@ -2,47 +2,69 @@
   "syntaxes": [
     {
       "title": "Plain Text",
-      "description": "Plain Text"
+      "description": "Plain Text",
+      "extension": "txt",
+      "content_type": "text/plain"
     },
     {
       "title": "Markdown",
-      "description": "Markdown"
+      "description": "Markdown",
+      "extension": "md",
+      "content_type": "text/markdown"
     },
     {
       "title": "HTML",
-      "description": "HTML"
+      "description": "HTML",
+      "extension": "html",
+      "content_type": "text/html"
     },
     {
       "title": "JSON",
-      "description": "JSON"
+      "description": "JSON",
+      "extension": "json",
+      "content_type": "application/json"
     },
     {
       "title": "YAML",
-      "description": "YAML"
+      "description": "YAML",
+      "extension": "yaml",
+      "content_type": "application/x-yaml"
     },
     {
       "title": "XML",
-      "description": "XML"
+      "description": "XML",
+      "extension": "xml",
+      "content_type": "application/xml"
     },
     {
       "title": "SQL",
-      "description": "SQL"
+      "description": "SQL",
+      "extension": "sql",
+      "content_type": "application/sql"
     },
     {
       "title": "CSS",
-      "description": "CSS"
+      "description": "CSS",
+      "extension": "css",
+      "content_type": "text/css"
     },
     {
       "title": "Python",
-      "description": "Python"
+      "description": "Python",
+      "extension": "py",
+      "content_type": "text/x-python"
     },
     {
       "title": "C++",
-      "description": "C++"
+      "description": "C++",
+      "extension": "cpp",
+      "content_type": "text/x-c++src"
     },
     {
       "title": "JavaScript",
-      "description": "JavaScript"
+      "description": "JavaScript",
+      "extension": "js",
+      "content_type": "application/javascript"
     }
   ]
 }

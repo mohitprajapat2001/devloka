@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Media FIles
+devloka/media/*
+
 # C extensions
 *.so
 
